@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 61.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #615551;
+  background-image: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 2 * 4vw);
+}
+
+.container {
+  height: calc(100vh - 2 * 4vw);
+}
+
+.container__card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: transform 2s;
+}
+.container__card--priceChange {
+  position: relative;
+  top: 0rem;
+  display: flex;
+}
+.container__card--cards {
+  position: relative;
+  top: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__item {
+  height: 45rem;
+  width: 300px;
+  border: rgba(241, 241, 241, 0.685) solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card__item--h1 {
+  height: 10%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 1.8rem;
+  color: rgba(16, 42, 190, 0.705);
+}
+.card__item--h1-big {
+  font-size: 10rem;
+  position: relative;
+}
+.card__item--h1-big span {
+  font-size: 4rem;
+  position: absolute;
+  left: -2rem;
+  top: 2rem;
+}
+.card__item--h2 {
+  position: absolute;
+  bottom: 3rem;
+}
+.card__item--price {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  color: rgba(16, 42, 190, 0.705);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(241, 241, 241, 0.685);
+  position: relative;
+}
+.card__item__list {
+  list-style: none;
+  font-size: 1.6rem;
+  height: 50%;
+  text-align: center;
+  padding: 0.5rem;
+}
+.card__item--item {
+  padding: 0.5rem;
+}
+.card__item--btn {
+  padding: 2rem 5rem;
+  cursor: pointer;
+  color: white;
+  font-size: 2rem;
+  background-color: rgba(16, 42, 190, 0.705);
+  outline: none;
+  border: none;
+}
+
+.card__item--medium {
+  top: -3rem;
+  position: relative;
+}
+
+.card__item--basic {
+  left: 3rem;
+  position: relative;
+}
+
+.card__item--pro {
+  right: 3rem;
+  position: relative;
+}
+
+.container__cards--hidden {
+  display: none;
+}
+
+.container__cards--active {
+  opacity: 1;
+  display: flex;
+}
+
+.price--monthly {
+  width: 10rem;
+  color: #494b57;
+}
+.price--yearly {
+  width: 10rem;
+  margin-left: 2rem;
+  color: #494b57;
+}
+.price--active {
+  border-bottom: 2px solid #8b55e2;
+  opacity: 1 !important;
+}
+.price--link {
+  text-decoration: none;
+  color: #494b57;
+  opacity: 0.3;
+  font-size: 2rem;
+  height: 100%;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=/main.2026268b.css.map */

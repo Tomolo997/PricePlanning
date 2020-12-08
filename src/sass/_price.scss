@@ -1,0 +1,29 @@
+.price {
+  &--monthly {
+    width: 10rem;
+    color: #494b57;
+  }
+  &--yearly {
+    width: 10rem;
+    margin-left: 2rem;
+    color: #494b57;
+  }
+
+  &--active {
+    border-bottom: 2px solid rgb(139, 85, 226);
+    opacity: 1 !important;
+  }
+
+  &--link {
+    text-decoration: none;
+    color: #494b57;
+    opacity: 0.3;
+    font-size: 2rem;
+    height: 100%;
+    padding: 1rem 2rem;
+    width: 100%;
+    &:active,
+    &:visited {
+    }
+  }
+}

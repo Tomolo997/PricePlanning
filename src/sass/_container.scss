@@ -1,0 +1,25 @@
+.container__card {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  &--priceChange {
+    position: relative;
+    top: 0rem;
+    display: flex;
+  }
+  &--cards {
+    position: relative;
+    top: 10rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  transition: transform 2s;
+}

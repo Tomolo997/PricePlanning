@@ -1,0 +1,86 @@
+.card__item {
+  height: 45rem;
+  width: 300px;
+  border: rgba(241, 241, 241, 0.685) solid 2px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &--h1 {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: rgba(16, 42, 190, 0.705);
+    &-big {
+      font-size: 10rem;
+      position: relative;
+      span {
+        font-size: 4rem;
+        position: absolute;
+        left: -2rem;
+        top: 2rem;
+      }
+    }
+  }
+  &--h2 {
+    position: absolute;
+    bottom: 3rem;
+  }
+  &--price {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    color: rgba(16, 42, 190, 0.705);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(241, 241, 241, 0.685);
+    position: relative;
+  }
+
+  //list
+  &__list {
+    list-style: none;
+    font-size: 1.6rem;
+    height: 50%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  &--item {
+    padding: 0.5rem;
+  }
+  &--btn {
+    padding: 2rem 5rem;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(16, 42, 190, 0.705);
+    outline: none;
+    border: none;
+  }
+}
+
+.card__item--medium {
+  top: -3rem;
+  position: relative;
+}
+
+.card__item--basic {
+  left: 3rem;
+  position: relative;
+}
+
+.card__item--pro {
+  right: 3rem;
+  position: relative;
+}
+
+.container__cards--hidden {
+  display: none;
+}
+.container__cards--active {
+  opacity: 1;
+  display: flex;
+}
